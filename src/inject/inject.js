@@ -40,11 +40,6 @@ function sortJobs() {
   jobs_array.detach().appendTo(jobs)
 }
 
-chrome.extension.sendMessage({}, function(response) {
-  var readyStateCheckInterval = setInterval(function() {
-    if (document.readyState === 'complete') {
-      clearInterval(readyStateCheckInterval)
-      sortJobs()
-    }
-  }, 10)
+$(document).ready(function() {
+  sortJobs()
 })
