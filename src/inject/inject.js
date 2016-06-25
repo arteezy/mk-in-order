@@ -42,4 +42,8 @@ function sortJobs() {
 
 $(document).ready(function() {
   sortJobs()
+
+  $('#vacancies_search_suggest_form_q').observe({ attributes: true, attributeFilter: ['class'] }, function() {
+    sortJobs()
+  })
 })
