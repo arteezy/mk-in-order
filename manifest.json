@@ -1,6 +1,6 @@
 {
   "name": "Мой Круг в порядке",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "manifest_version": 2,
   "description": "Sorts the jobs listings on moikrug.ru, so the newest jobs are shown first",
   "homepage_url": "http://github.com/arteezy/mk-in-order",
@@ -22,7 +22,7 @@
   "content_scripts": [
     {
       "matches": [
-        "https://www.moikrug.ru/*"
+        "https://moikrug.ru/*"
       ],
       "js": [
         "js/jquery.min.js",
