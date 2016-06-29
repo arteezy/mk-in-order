@@ -1,4 +1,4 @@
-var months = {
+const months = {
   'января'   : 'jan',
   'февраля'  : 'feb',
   'марта'    : 'mar',
@@ -20,13 +20,17 @@ function replaceAll(str, map) {
   })
 }
 
+function parseDate(token) {
+  return Date.parse(replaceAll($(token).find('span.date').html(), months))
+}
+
 function sortJobs() {
   var jobs = $('#jobs_list')
   var jobs_array = jobs.children('.job')
 
   jobs_array.sort(function(a, b) {
-    var an = Date.parse(replaceAll($(a).find('span.date').html(), months))
-    var bn = Date.parse(replaceAll($(b).find('span.date').html(), months))
+    var an = parseDate(a)
+    var bn = parseDate(b)
 
     if (an > bn) {
       return -1
