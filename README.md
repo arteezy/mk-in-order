@@ -1,4 +1,4 @@
-# Мой Круг в порядке
+## [Мой Круг в порядке](https://chrome.google.com/webstore/detail/%D0%BC%D0%BE%D0%B9-%D0%BA%D1%80%D1%83%D0%B3-%D0%B2-%D0%BF%D0%BE%D1%80%D1%8F%D0%B4%D0%BA%D0%B5/mdoeebdabadnmfejoipdeaemfedepanl)
 
 ###### Расширение для Chrome, которое сортирует вакансии по дате на сайте [Мой Круг](https://moikrug.ru)
 
