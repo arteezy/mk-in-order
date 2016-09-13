@@ -1,8 +1,8 @@
 {
   "name": "Мой Круг в порядке",
-  "version": "1.2",
+  "version": "2.0",
   "manifest_version": 2,
-  "description": "Sorts the jobs listings on moikrug.ru, so the newest jobs are shown first",
+  "description": "Сортирует вакансии и заказы на сайтах moikrug.ru и freelansim.ru по дате",
   "homepage_url": "http://github.com/arteezy/mk-in-order",
   "icons": {
     "16": "icons/16.png",
@@ -17,12 +17,14 @@
     "persistent": false
   },
   "permissions": [
-    "https://moikrug.ru/*"
+    "https://moikrug.ru/*",
+    "https://freelansim.ru/*"
   ],
   "content_scripts": [
     {
       "matches": [
-        "https://moikrug.ru/*"
+        "https://moikrug.ru/*",
+        "https://freelansim.ru/*"
       ],
       "js": [
         "js/jquery.min.js",
