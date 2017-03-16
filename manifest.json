@@ -1,8 +1,9 @@
 {
-  "name": "Мой Круг в порядке",
-  "version": "2.0",
+  "name": "__MSG_appName__",
+  "description": "__MSG_appDesc__",
+  "version": "2.1",
   "manifest_version": 2,
-  "description": "Сортирует вакансии и заказы на сайтах moikrug.ru и freelansim.ru по дате",
+  "default_locale": "ru",
   "homepage_url": "http://github.com/arteezy/mk-in-order",
   "icons": {
     "16": "icons/16.png",
@@ -10,26 +11,21 @@
     "48": "icons/48.png",
     "128": "icons/128.png"
   },
-  "background": {
-    "scripts": [
-      "src/bg/background.js"
-    ],
-    "persistent": false
-  },
   "permissions": [
-    "https://moikrug.ru/*",
-    "https://freelansim.ru/*"
+    "*://moikrug.ru/*",
+    "*://freelansim.ru/*"
   ],
   "content_scripts": [
     {
       "matches": [
-        "https://moikrug.ru/*",
-        "https://freelansim.ru/*"
+        "*://moikrug.ru/*",
+        "*://freelansim.ru/*"
       ],
       "js": [
-        "js/jquery.min.js",
-        "js/jquery-observe.min.js",
-        "src/inject/inject.js"
+        "lib/jquery.min.js",
+        "lib/jquery-observe.min.js",
+        "lib/lodash.min.js",
+        "src/sortjobs.js"
       ]
     }
   ]

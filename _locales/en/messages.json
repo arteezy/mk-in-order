@@ -1,0 +1,8 @@
+{
+  "appName": {
+    "message": "MK in order"
+  },
+  "appDesc": {
+    "message": "Sorts the job listings on moikrug.ru and freelansim.ru, so the newest jobs are shown first"
+  }
+}

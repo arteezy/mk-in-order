@@ -1,0 +1,8 @@
+{
+  "appName": {
+    "message": "Мой Круг в порядке"
+  },
+  "appDesc": {
+    "message": "Сортирует вакансии и заказы на сайтах moikrug.ru и freelansim.ru по дате"
+  }
+}
